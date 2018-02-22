@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Coin Wallet</string>
+
+    <string name="login_name">Prisijungimo vardas</string>
+    <string name="login_password">Prisijungimo slaptažodis</string>
+    <string name="login_login">Prisijungti</string>
+    <string name="login_register">Registruotis</string>
+    <string name="login_remember">Prisiminti mane</string>
+
+    <string name="register_activity_name">Registracija</string>
+    <string name="register_name">Prisijungimo vardas</string>
+    <string name="register_password">Prisijungimo slaptažodis</string>
+    <string name="register_email">El. paštas</string>
+
+
+</resources>
