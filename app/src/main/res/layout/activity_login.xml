@@ -29,7 +29,9 @@
         android:id="@+id/login_name"
         android:layout_width="match_parent"
         android:gravity="center_horizontal"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Prisijungimo vardas"
+        android:maxLines="1"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -42,7 +44,10 @@
         android:id="@+id/login_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:hint="Slaptazodis"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/login_btn_login"
