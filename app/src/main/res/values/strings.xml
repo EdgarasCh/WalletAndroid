@@ -12,6 +12,12 @@
     <string name="register_password">Prisijungimo slaptažodis</string>
     <string name="register_email">El. paštas</string>
     <string name="login_invalid">Neteisingai įvestas vardas/slaptažodis</string>
+    <string name="search_new_coin">Nauja Valiuta</string>
+
+
+
+
+
 
 
 </resources>
