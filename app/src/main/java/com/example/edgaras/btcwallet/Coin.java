@@ -117,7 +117,19 @@ public class Coin {
         this.user = user;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Coin{" +
+                "Id=" + Id +
+                ", name='" + name + '\'' +
+                ", abbreviation='" + abbreviation + '\'' +
+                ", priceRange='" + priceRange + '\'' +
+                ", market='" + market + '\'' +
+                ", cap='" + cap + '\'' +
+                ", bought=" + bought +
+                ", sold=" + sold +
+                ", profit=" + profit +
+                ", user='" + user + '\'' +
+                '}';
+    }
 }

@@ -7,16 +7,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class SearchActivity extends AppCompatActivity {
-    public Button btnNewonSearchAct;
+    public Button btnNewOnSearchAct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        btnNewonSearchAct = (Button) findViewById(R.id.search_btn_new_coin);
+        btnNewOnSearchAct = (Button) findViewById(R.id.search_btn_new_coin);
 
-        btnNewonSearchAct.setOnClickListener(new View.OnClickListener() {
+        btnNewOnSearchAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent SearchToNewCoin = new Intent(SearchActivity.this, NewCoinActivity.class);

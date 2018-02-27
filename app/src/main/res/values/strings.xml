@@ -14,9 +14,18 @@
     <string name="login_invalid">Neteisingai įvestas vardas/slaptažodis</string>
     <string name="search_new_coin">Nauja Valiuta</string>
 
-
-
-
+    <string name="new_coin_create">Sukurti naują valiutą</string>
+    <string name="new_cb_bithumb">Bithumb</string>
+    <string name="new_cb_bittrex">Bittrex</string>
+    <string name="new_cb_poloniex">Poloniex</string>
+    <string name="new_cb_binance">Binance</string>
+    <string name="new_cb_others">Kitos</string>
+    <string name="new_rb_less100k">iki 100 tūkst.</string>
+    <string name="new_rb_less1M">iki 1 mln.</string>
+    <string name="new_rb_less10M">iki 10 mln.</string>
+    <string name="new_rb_less100M">iki 100 mln.</string>
+    <string name="new_rb_less1B">iki 1 mlrd.</string>
+    <string name="new_rb_more1B">virš 1 mlrd.</string>
 
 
 

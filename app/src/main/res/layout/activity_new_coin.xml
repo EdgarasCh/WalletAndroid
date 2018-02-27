@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context="com.example.edgaras.btcwallet.NewCoinActivity"
+    android:orientation="vertical">
+
+    <!--ID-->
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+       <TextView
+           android:text="ID:"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+        <EditText
+           android:id="@+id/new_coin_Id"
+           android:hint="Coin ID"
+           android:inputType="numberSigned"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--NAME-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="PAVADINIMAS:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/new_coin_name"
+            android:hint="Valiutos pavadinimas"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--ABRREVIATION-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="TRUMPINYS:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/new_coin_abbr"
+            android:hint="Valiutos trumpinys"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="KAPITALIZACIJA:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/new_rb_group_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/new_rb_less100k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_rb_less100k" />
+        <RadioButton
+            android:id="@+id/new_rb_less1M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_rb_less1M" />
+        <RadioButton
+            android:id="@+id/new_rb_less10M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_rb_less10M" />
+        <RadioButton
+            android:id="@+id/new_rb_less100M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_rb_less100M" />
+        <RadioButton
+            android:id="@+id/new_rb_less1B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_rb_less1B" />,
+        <RadioButton
+            android:id="@+id/new_rb_more1B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_rb_more1B" />
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="BIRŽOS:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/new_cb_bithumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_cb_bithumb" />
+    <CheckBox
+        android:id="@+id/new_cb_bittrex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_cb_bittrex" />
+    <CheckBox
+        android:id="@+id/new_ch_Poloniex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_cb_poloniex" />
+    <CheckBox
+        android:id="@+id/new_ch_Binance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_cb_binance" />
+    <CheckBox
+        android:id="@+id/new_cb_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_cb_others"
+        android:checked="true"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="KAINA:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/new_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/new_coin_btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_coin_create"
+        android:layout_margin="10sp"/>
+
+
+
+</LinearLayout>

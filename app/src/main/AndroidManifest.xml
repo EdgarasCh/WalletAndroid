@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".SearchActivity"></activity>
-        <activity android:name=".NewCoinActivity"/>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".NewCoinActivity"></activity>
     </application>
 
 </manifest>
