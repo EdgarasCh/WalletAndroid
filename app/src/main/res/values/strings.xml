@@ -27,6 +27,9 @@
     <string name="new_rb_less1B">iki 1 mlrd.</string>
     <string name="new_rb_more1B">virš 1 mlrd.</string>
 
-
+    <string name="login_label">Prisijungimas</string>
+    <string name="register_label">Naujas vartotojas</string>
+    <string name="search_label">Paieška</string>
+    <string name="new_entry_label">Naujas įrašas</string>
 
 </resources>

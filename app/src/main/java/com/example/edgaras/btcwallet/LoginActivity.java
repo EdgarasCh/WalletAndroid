@@ -18,6 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTitle(R.string.login_label);
 
         Button btnLoginInLoginAct;
         Button btnRegisterInLoginAct;
@@ -68,7 +69,18 @@ public class LoginActivity extends AppCompatActivity {
                      etPasswordOnButton.setError(getResources().getString(R.string.login_invalid));
                      // Toast.makeText(LoginActivity.this, getResources().getString(R.string.login_invalid_password),
                      // Toast.LENGTH_SHORT).show();
+                 } else { // praėjo validaciją, kreipiamės į duomenų bazę
+                     DatabaseSQLite DBSQLite = new DatabaseSQLite(getApplicationContext());
+                     if (DBSQLite.isValidUser(etUsernameOnButton.getText().toString(), etPasswordOnButton.getText().toString())){
+                         cancel = false;
+                     } else {
+                         cancel = true;
+                         Toast.makeText(LoginActivity.this, "Tokio vartotojo nėra", Toast.LENGTH_SHORT).show();
+                     }
+
                  }
+
+
                  if (!cancel){
                     Toast.makeText(LoginActivity.this,
                             "Prisijungimo vardas:"+etUsernameOnButton.getText().toString()+"\n"+

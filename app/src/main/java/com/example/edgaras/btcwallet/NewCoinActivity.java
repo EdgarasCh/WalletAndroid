@@ -29,6 +29,7 @@ public class NewCoinActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_coin);
+        setTitle(R.string.new_entry_label);
 
         btnNewCoinRegister = (Button)findViewById(R.id.new_coin_btn_create);
         etID = (EditText) findViewById(R.id.new_coin_Id);

@@ -8,6 +8,8 @@ import android.content.SharedPreferences;
  */
 
 public class User {
+    private int id;
+    private String userlevel;
     private String username;
     private String password;
     private String email;
@@ -19,7 +21,8 @@ public class User {
     private SharedPreferences sharedPreferences;
 
     //skirtas register activity registruojant nauja vartotoja
-    public User(String username, String password, String email) {
+    public User(String userlevel, String username, String password, String email) {
+        this.userlevel = userlevel;
         this.username = username;
         this.password = password;
         this.email = email;
@@ -28,6 +31,10 @@ public class User {
     //konstruktorius skirtas login langui
     public User(Context context){
         this.sharedPreferences = context.getSharedPreferences(User.PREFERENCES_FILE_NAME, Context.MODE_PRIVATE);
+    }
+
+    // konstruktorius skirtas sqlLite
+    public User() {
     }
 
     //geteriai seteriai skirti login activity prisijungimo langui
@@ -56,7 +63,7 @@ public class User {
         this.sharedPreferences.edit().putBoolean(REMEMBER_ME_KEY,rememberMe).commit();
     }
 
-        //sitie geteriai seteriai skirti register activity langui
+    //sitie geteriai seteriai skirti register activity langui
     public String getUsername() {
         return username;
     }
@@ -69,9 +76,7 @@ public class User {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public void setPassword(String password) {        this.password = password;    }
 
     public String getEmail() {
         return email;
@@ -79,5 +84,24 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public int getId() {        return id;    }
+
+    public void setId(int id) {        this.id = id;    }
+
+    public String getUserlevel() {        return userlevel;    }
+
+    public void setUserlevel(String userlevel) {        this.userlevel = userlevel;    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userlevel='" + userlevel + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

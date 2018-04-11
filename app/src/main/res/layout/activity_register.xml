@@ -35,7 +35,7 @@ android:orientation="vertical">
     app:layout_constraintTop_toTopOf="parent" -->
 
     <EditText
-        android:id="@+id/login_name"
+        android:id="@+id/register_name"
         android:layout_width="match_parent"
         android:gravity="center_horizontal"
         android:layout_height="wrap_content" />
@@ -48,7 +48,7 @@ android:orientation="vertical">
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/register_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"/>
@@ -61,7 +61,7 @@ android:orientation="vertical">
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/login_email"
+        android:id="@+id/register_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"/>

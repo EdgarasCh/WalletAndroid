@@ -13,6 +13,8 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+        setTitle(R.string.search_label);
+
 
         btnNewOnSearchAct = (Button) findViewById(R.id.search_btn_new_coin);
 
