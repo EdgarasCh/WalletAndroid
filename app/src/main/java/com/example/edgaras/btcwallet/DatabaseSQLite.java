@@ -54,7 +54,7 @@ public class DatabaseSQLite extends SQLiteOpenHelper  {
         contentValues.put(USER_PASSWORD,   user.getPassword());
         contentValues.put(USER_EMAIL,      user.getEmail());
 
-        db.insert("TABLE_USERS", null, contentValues);
+        db.insert(TABLE_USERS, null, contentValues);
         db.close();
     }
 

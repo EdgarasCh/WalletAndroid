@@ -48,18 +48,19 @@ public class RegisterActivity extends AppCompatActivity {
                     User userToSQLite = new User ("1",username.getText().toString(),
                                                     password.getText().toString(),
                                                     email.getText().toString());
-
                     databaseSQLite.addUser(userToSQLite);
                     List<User> usersList = databaseSQLite.getAllUsers();
+
                     for (User user:usersList){
                         Toast.makeText(getApplicationContext(), user.toString(), Toast.LENGTH_LONG).show();
                     }
 
+                    Intent LoginToRegister = new Intent(RegisterActivity.this, LoginActivity.class);
+                    startActivity(LoginToRegister);
 
                 }
 
-                Intent LoginToRegister = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(LoginToRegister);
+
             }
         });
 
